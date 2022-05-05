@@ -2,4 +2,5 @@ function Following() {
     return (<div>Following</div> );
 }
 
-export default Following;
+export default Following;   
+
