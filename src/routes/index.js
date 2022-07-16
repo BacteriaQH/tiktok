@@ -1,23 +1,22 @@
+import config from '~/config';
+
 //Layout
-import { HeaderOnly } from "~/components/Layout";
+import { HeaderOnly } from '~/layouts';
 
 //Pages
-import Home from "~/pages/Home";
-import Following from "~/pages/Following";
-import Profile from "~/pages/Profile";
-import Upload from "~/pages/Upload";
-import Search from "~/pages/Search";
-
-
+import Home from '~/pages/Home';
+import Following from '~/pages/Following';
+import Profile from '~/pages/Profile';
+import Upload from '~/pages/Upload';
+import Search from '~/pages/Search';
 
 const publicRoutes = [
-  { path: "/", element: Home },
-  { path: "/following", element: Following },
-  { path: "/profile", element: Profile },
-  { path: "/upload", element: Upload, layout: HeaderOnly },
-  { path: "/search", element: Search, layout: null },
+    { path: config.routes.home, element: Home },
+    { path: config.routes.following, element: Following },
+    { path: config.routes.profile, element: Profile },
+    { path: config.routes.upload, element: Upload, layout: HeaderOnly },
+    { path: config.routes.search, element: Search, layout: null },
 ];
-
 
 const privateRoutes = [];
 
